@@ -1,0 +1,6 @@
+name: "Cro Koku Ryu"
+description: "Nas klub"
+
+url: "http://localhost:4567"
+
+paginate: 10

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title> {% if page.title %} {{ page.title }} | {% endif %} crokokuryu.org </title>
+
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="/res/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="/res/css/app.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="header row span12">
+			</div>
+
+			<div class="content row span12">
+				<ul class="nav nav-tabs centered">
+					<li><a href="/">Home</a></li>
+					<li><a href="/vijesti">Vijesti</a></li>
+					<li><a href="/onama">O nama</a></li>
+					<li><a href="/kurikulum">Kurikulum</a></li>
+				</ul>
+
+				<div class="row">
+					{{ content }}
+				</div>
+			<hr />
+			</div>
+
+			<div class="footer row span12">
+				<p>CroKokuRyu.org | Sva prava pridžana, 2013</p>
+			</div>
+		</div>
+
+		<script src="/res/js/jquery-1.9.1.min.js"></script>
+		<script src="/res/bootstrap/js/bootstrap.js"></script>
+	</body>
+</html>
