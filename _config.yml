@@ -1,3 +1,4 @@
 name: "Cro Koku Ryu"
 description: "Nas klub"
 paginate: 5
+exclude: ["vendor"]
