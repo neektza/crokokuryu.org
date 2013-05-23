@@ -1,4 +1,4 @@
 crokokuryu.org
 ==============
 
-MA club
+Powered by [Jekyll](http://jekyllrb.com/)
