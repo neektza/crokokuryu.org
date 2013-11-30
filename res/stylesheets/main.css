@@ -1,0 +1,85 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+body {
+  background: url("/res/images/chruch.png") repeat; }
+  body .container {
+    *zoom: 1;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    body .container:before, body .container:after {
+      content: " ";
+      display: table; }
+    body .container:after {
+      clear: both; }
+    body .container .header {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background-color: white;
+      text-align: center; }
+      body .container .header .hero {
+        *zoom: 1;
+        max-width: 68em;
+        margin-left: auto;
+        margin-right: auto; }
+        body .container .header .hero:before, body .container .header .hero:after {
+          content: " ";
+          display: table; }
+        body .container .header .hero:after {
+          clear: both; }
+        body .container .header .hero .right-pic {
+          margin-top: 10px;
+          display: block;
+          float: left;
+          margin-right: 2.35765%;
+          width: 23.23176%; }
+          body .container .header .hero .right-pic:last-child {
+            margin-right: 0; }
+        body .container .header .hero .left-pic {
+          margin-top: 10px;
+          display: block;
+          float: left;
+          margin-right: 2.35765%;
+          width: 23.23176%; }
+          body .container .header .hero .left-pic:last-child {
+            margin-right: 0; }
+        body .container .header .hero .titles {
+          display: block;
+          float: left;
+          margin-right: 2.35765%;
+          width: 48.82117%; }
+          body .container .header .hero .titles:last-child {
+            margin-right: 0; }
+      body .container .header .nav {
+        list-style: none; }
+        body .container .header .nav li {
+          display: inline; }
+    body .container .content {
+      background-color: white;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px; }
+    body .container .footer {
+      text-align: center; }

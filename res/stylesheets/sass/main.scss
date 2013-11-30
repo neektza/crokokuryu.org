@@ -1,0 +1,61 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'vars';
+@import 'debugging';
+
+.clearfix {
+	@include clearfix;
+}
+
+body {
+	background: url($background-image-location) repeat;
+
+
+	.container {
+		@include outer-container;
+
+		.header {
+			@include border-top-radius(5px);
+			@include border-bottom-radius(5px);
+			@include border-left-radius(5px);
+			@include border-right-radius(5px);
+
+			background-color: white;
+			text-align: center;
+
+			.hero {
+				@include outer-container;
+				.right-pic {
+					margin-top: 10px;
+					@include span-columns(3);
+				}
+				.left-pic {
+					margin-top: 10px;
+					@include span-columns(3);
+				}
+				.titles { @include span-columns(6); }
+			}
+
+			.nav {
+				list-style: none;
+				li {
+					display: inline;
+				}
+			}
+
+		}
+
+		.content {
+			background-color: white;
+
+			@include border-top-radius(5px);
+			@include border-bottom-radius(5px);
+			@include border-left-radius(5px);
+			@include border-right-radius(5px);
+		}
+
+		.footer {
+			text-align: center;
+		}
+	}
+}
