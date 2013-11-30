@@ -4,40 +4,46 @@
 		<meta charset=utf-8 />
 		<title> {% if page.title %} {{ page.title }} | {% endif %} crokokuryu.org </title>
 
-		<meta name="viewport" content="width=device-width" />
-		<link rel="stylesheet" href="/res/bootstrap/css/bootstrap.css" />
-		<link rel="stylesheet" href="/res/css/app.css" />
+		<link rel="stylesheet" href="/res/stylesheets/main.css" />
 	</head>
 
 	<body>
 		<div class="container">
-			<div class="header row span12">
-			</div>
 
-			<div class="content row span12">
-				<ul class="nav nav-tabs centered">
-					<li><a href="/">Vijesti</a></li>
-					<li><a href="/onama">O nama</a></li>
-					<li><a href="/ovjestini">O vještini</a></li>
-					<li><a href="/rijecnik">Riječnik</a></li>
-					<li><a href="/etiketa">Etiketa</a></li>
-					<li><a href="/multimedija">Multimedija</a></li>
+			<div class="header" id="topmenu">
+				<div class="hero">
+					<div class="left-pic" id="torii"><img src="/res/images/torii.png"/></div>
+					<div class="titles">
+						<h1>Koku Ryu Zagreb</h1>
+						<h2>Škola borilačkih vještina</h2>
+					</div>
+					<div class="right-pic" id="kokuryukai"><img src="/res/images/kokuryukai.png"/></div>
+				</div>
+
+
+				<ul class="nav">
+					<li><a href="/">Vijesti</a></li> |
+					<li><a href="/onama">O nama</a></li> |
+					<li><a href="/ovjestini">O vještini</a></li> |
+					{% comment %} <li><a href="/rijecnik">Riječnik</a></li> | {% endcomment %}
+					{% comment %} <li><a href="/etiketa">Etiketa</a></li> | {% endcomment %}
+					<li><a href="/multimedija">Multimedija</a></li> |
 					<li><a href="/kontakt">Kontakt</a></li>
-
 				</ul>
 
-				<div class="row">
-					{{ content }}
-				</div>
-			<hr />
+				<div class="clearfix"></div>
 			</div>
 
-			<div class="footer row span12 small">
-				<small>CroKokuRyu.org | Sva prava pridžana, 2013</small>
+			<div class="content">
+				{{ content }}
 			</div>
+
+			<!-- <div class="footer" id="disclaimer"> -->
+			<!-- 	<small>crokokuryu.org | 2013</small> -->
+			<!-- </div> -->
 		</div>
 
-		<script src="/res/js/jquery-1.9.1.min.js"></script>
-		<script src="/res/bootstrap/js/bootstrap.js"></script>
+		<script src="/res/js/lib/jquery-2.0.3.min.js"></script>
+		<script src="/res/js/lib/lodash-2.2.1.min.js"></script>
 	</body>
 </html>
