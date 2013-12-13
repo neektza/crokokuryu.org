@@ -22,6 +22,7 @@ body {
 
 			background-color: white;
 			text-align: center;
+			padding-top: 30px;
 
 			.hero {
 				@include outer-container;
@@ -38,6 +39,7 @@ body {
 
 			.nav {
 				list-style: none;
+				font-size: large;
 				li {
 					display: inline;
 				}
@@ -60,6 +62,8 @@ body {
 			}
 
 			.tijelo {
+				h1 { text-align: center; }
+
 				@include outer-container;
 				.lijevo {
 					@include span-columns(6);

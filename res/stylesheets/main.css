@@ -33,7 +33,8 @@ body {
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
       background-color: white;
-      text-align: center; }
+      text-align: center;
+      padding-top: 30px; }
       body .container .header .hero {
         *zoom: 1;
         max-width: 68em;
@@ -68,7 +69,8 @@ body {
           body .container .header .hero .titles:last-child {
             margin-right: 0; }
       body .container .header .nav {
-        list-style: none; }
+        list-style: none;
+        font-size: large; }
         body .container .header .nav li {
           display: inline; }
     body .container .content {
@@ -90,6 +92,8 @@ body {
         max-width: 68em;
         margin-left: auto;
         margin-right: auto; }
+        body .container .content .tijelo h1 {
+          text-align: center; }
         body .container .content .tijelo:before, body .container .content .tijelo:after {
           content: " ";
           display: table; }

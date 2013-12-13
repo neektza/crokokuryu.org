@@ -1,13 +1,27 @@
 ---
 layout: main
-title: Vijesti
+title: Novosti
 ---
 
-<div id="posts">
-{% for post in paginator.posts %}
-	<a id="post-title" href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-	<div id="post-content">
-		{{ post.excerpt }}
+
+<div class="tijelo">
+	<div class="lijevo" id="posts">
+		<h1>Novosti</h1>
+		{% for post in paginator.posts %}
+			<a id="post-title" href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+		<div id="post-content">
+			{{ post.content }}
+		</div>
+	{% endfor %}
 	</div>
-{% endfor %}
+
+	<div class="desno" id="posts">
+		<h1>Eseji</h1>
+		{% for post in paginator.posts %}
+			<a id="post-title" href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+		<div id="post-content">
+			{{ post.content }}
+		</div>
+	{% endfor %}
+	</div>
 </div>

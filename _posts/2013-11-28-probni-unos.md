@@ -1,7 +1,0 @@
----
-layout: main
-title: Probni unos
-excerpt: Unos za probu, da vidimo kak ce izgledat
----
-
-Curabitur a orci tellus. Maecenas dui nisl, euismod id interdum a, porta ut nulla. Nam lacinia consequat ligula, ut convallis metus rhoncus ut. Morbi sagittis dapibus convallis. Suspendisse eleifend bibendum vehicula. Nulla quis enim justo, at facilisis augue. Proin felis dui, volutpat vitae pellentesque nec, adipiscing ac sem.
