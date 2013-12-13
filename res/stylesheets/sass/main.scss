@@ -47,11 +47,42 @@ body {
 
 		.content {
 			background-color: white;
+			margin-top: 15px;
+			padding: 15px 45px;
 
 			@include border-top-radius(5px);
 			@include border-bottom-radius(5px);
 			@include border-left-radius(5px);
 			@include border-right-radius(5px);
+
+			.heading {
+				text-align: center;
+			}
+
+			.tijelo {
+				@include outer-container;
+				.lijevo {
+					@include span-columns(6);
+				}
+				.desno {
+					@include span-columns(6);
+				}
+			}
+
+			.locations {
+				@include outer-container;
+				.right-pic {
+					margin-top: 10px;
+					@include span-columns(3);
+				}
+				.left-pic {
+					margin-top: 10px;
+					@include span-columns(3);
+				}
+				.titles { @include span-columns(6); }
+			}
+
+
 		}
 
 		.footer {

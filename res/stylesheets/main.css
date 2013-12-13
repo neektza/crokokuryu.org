@@ -73,6 +73,8 @@ body {
           display: inline; }
     body .container .content {
       background-color: white;
+      margin-top: 15px;
+      padding: 15px 45px;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
       border-bottom-left-radius: 5px;
@@ -81,5 +83,64 @@ body {
       border-bottom-left-radius: 5px;
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px; }
+      body .container .content .heading {
+        text-align: center; }
+      body .container .content .tijelo {
+        *zoom: 1;
+        max-width: 68em;
+        margin-left: auto;
+        margin-right: auto; }
+        body .container .content .tijelo:before, body .container .content .tijelo:after {
+          content: " ";
+          display: table; }
+        body .container .content .tijelo:after {
+          clear: both; }
+        body .container .content .tijelo .lijevo {
+          display: block;
+          float: left;
+          margin-right: 2.35765%;
+          width: 48.82117%; }
+          body .container .content .tijelo .lijevo:last-child {
+            margin-right: 0; }
+        body .container .content .tijelo .desno {
+          display: block;
+          float: left;
+          margin-right: 2.35765%;
+          width: 48.82117%; }
+          body .container .content .tijelo .desno:last-child {
+            margin-right: 0; }
+      body .container .content .locations {
+        *zoom: 1;
+        max-width: 68em;
+        margin-left: auto;
+        margin-right: auto; }
+        body .container .content .locations:before, body .container .content .locations:after {
+          content: " ";
+          display: table; }
+        body .container .content .locations:after {
+          clear: both; }
+        body .container .content .locations .right-pic {
+          margin-top: 10px;
+          display: block;
+          float: left;
+          margin-right: 2.35765%;
+          width: 23.23176%; }
+          body .container .content .locations .right-pic:last-child {
+            margin-right: 0; }
+        body .container .content .locations .left-pic {
+          margin-top: 10px;
+          display: block;
+          float: left;
+          margin-right: 2.35765%;
+          width: 23.23176%; }
+          body .container .content .locations .left-pic:last-child {
+            margin-right: 0; }
+        body .container .content .locations .titles {
+          display: block;
+          float: left;
+          margin-right: 2.35765%;
+          width: 48.82117%; }
+          body .container .content .locations .titles:last-child {
+            margin-right: 0; }
     body .container .footer {
       text-align: center; }
