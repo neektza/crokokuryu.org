@@ -43,6 +43,7 @@ GEM
     rack-contrib (1.1.0)
       rack (>= 0.9.1)
     rack-rewrite (1.3.3)
+    rake (10.1.0)
     safe_yaml (0.7.1)
     sass (3.2.12)
     syntax (1.0.0)
@@ -60,3 +61,4 @@ DEPENDENCIES
   puma
   rack-contrib
   rack-rewrite
+  rake
