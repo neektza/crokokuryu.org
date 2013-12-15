@@ -1,15 +1,12 @@
-@import 'bourbon/bourbon';
-@import 'neat/neat';
-@import 'vars';
-@import 'debugging';
+@import 'bourbon';
+@import 'neat';
 
 .clearfix {
 	@include clearfix;
 }
 
 body {
-	background: url($background-image-location) repeat;
-
+	background: image-url('chruch.png'), repeat;
 
 	.container {
 		@include outer-container;

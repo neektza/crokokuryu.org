@@ -4,7 +4,7 @@
 		<meta charset=utf-8 />
 		<title> {% if page.title %} {{ page.title }} | {% endif %} crokokuryu.org </title>
 
-		<link rel="stylesheet" href="/res/stylesheets/main.css" />
+		{% stylesheet main %}
 	</head>
 
 	<body>
@@ -12,18 +12,18 @@
 
 			<div class="header" id="topmenu">
 				<div class="hero">
-					<div class="left-pic" id="torii"><img src="/res/images/torii.png"/></div>
+					<div class="left-pic" id="torii">{% image torii.png %}</div>
 					<div class="titles">
 						<h2>Škola borilačkih vještina</h2>
 						<h1>Yawara Koku Ryu</h1>
 					</div>
-					<div class="right-pic" id="kokuryukai"><img src="/res/images/zmaj-logo.png"/></div>
+					<div class="right-pic" id="dragon">{% image dragon_logo.png %}</div>
 				</div>
 
 
 				<ul class="nav">
 					<li><a href="/">Novosti</a></li> |
-					<li><a href="/eseji">Eseji</a></li> |
+					{% comment %} <li><a href="/eseji">Eseji</a></li> | {% endcomment %}
 					<li><a href="/onama">O nama</a></li> |
 					<li><a href="/ovjestini">O vještini</a></li> |
 					{% comment %} <li><a href="/rijecnik">Riječnik</a></li> | {% endcomment %}
@@ -40,7 +40,6 @@
 			</div>
 		</div>
 
-		<script src="/res/js/lib/jquery-2.0.3.min.js"></script>
-		<script src="/res/js/lib/lodash-2.2.1.min.js"></script>
+		{% javascript main %}
 	</body>
 </html>
