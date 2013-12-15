@@ -5,6 +5,9 @@
 	@include clearfix;
 }
 
+#utrina-vani img { width: 621px; }
+
+
 body {
 	background: image-url('chruch.png'), repeat;
 
@@ -69,21 +72,6 @@ body {
 					@include span-columns(6);
 				}
 			}
-
-			.locations {
-				@include outer-container;
-				.right-pic {
-					margin-top: 10px;
-					@include span-columns(3);
-				}
-				.left-pic {
-					margin-top: 10px;
-					@include span-columns(3);
-				}
-				.titles { @include span-columns(6); }
-			}
-
-
 		}
 
 		.footer {
