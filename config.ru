@@ -1,5 +1,9 @@
 require 'rack/contrib/try_static'
 require 'rack/contrib/not_found'
+
+use Rack::Auth::Basic, "U izradi..." do |username, password|
+  [username, password] == ['dinko', 'sifra123']
+end
  
 use Rack::TryStatic,
   root: "_site",
@@ -12,10 +16,5 @@ use Rack::TryStatic,
     [["png"],   {'Content-Type' => 'image/png'}],
     ["/assets", {'Cache-Control' => 'public, max-age=31536000'}],
   ]
-
-
-use Rack::Auth::Basic, "U izradi..." do |username, password|
-  username == 'foo' && password == 'bar'
-end
 
 run Rack::NotFound.new('_site/404.html')
