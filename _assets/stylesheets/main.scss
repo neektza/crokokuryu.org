@@ -72,6 +72,13 @@ body {
 					@include span-columns(6);
 				}
 			}
+
+			.osoba {
+				.slika {
+					float: left;
+					margin: 10px;
+				}
+			}
 		}
 
 		.footer {
