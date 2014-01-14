@@ -55,42 +55,48 @@ body {
 			@include border-left-radius(5px);
 			@include border-right-radius(5px);
 
-			.heading {
+			.naslov {
+				text-align: center;
+			}
+
+			.centralno {
 				text-align: center;
 			}
 
 			.tijelo {
+				@include outer-container;
 				text-align: justify;
 				h1 { text-align: center; }
 
 				.clanak {
-					@include outer-container;
+					@include row();
+					.nivo {
+						@include row();
+					}
+
 					.lijevo { @include span-columns(6); }
 					.desno { @include span-columns(6); }
 				}
 
-				.onama {
-					.osoba {
-						@include outer-container;
-						.opis {
-							@include span-columns(6);
-						}
-						.slika {
-							img { height: 250px; }
-							@include span-columns(6);
-							img { margin: 15px; } 
-						}
-					}
-				}
+				.osoba {
+					@include row();
 
-				.ovjestini {
+					.opis {
+						@include span-columns(6);
+					}
+					.slika {
+						img { height: 250px; }
+						@include span-columns(6);
+						img { margin: 15px; } 
+					}
 				}
 			}
 
 		}
 
-		.footer {
-			text-align: center;
-		}
+	}
+
+	.footer {
+		text-align: center;
 	}
 }
