@@ -2,7 +2,6 @@ require 'rack/contrib/try_static'
 require 'rack/contrib/not_found'
 
 use Rack::Auth::Basic, "U izradi..." do |username, password|
-  [username, password] == ['dinko', 'sifra123']
   [username, password] == ['korisnik', 'sifra123']
 end
  

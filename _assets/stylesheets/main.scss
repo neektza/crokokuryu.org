@@ -63,6 +63,12 @@ body {
 				text-align: justify;
 				h1 { text-align: center; }
 
+				.clanak {
+					@include outer-container;
+					.lijevo { @include span-columns(6); }
+					.desno { @include span-columns(6); }
+				}
+
 				.onama {
 					.osoba {
 						@include outer-container;
@@ -70,6 +76,7 @@ body {
 							@include span-columns(6);
 						}
 						.slika {
+							img { height: 250px; }
 							@include span-columns(6);
 							img { margin: 15px; } 
 						}
