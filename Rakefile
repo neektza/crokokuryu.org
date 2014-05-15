@@ -1,6 +1,3 @@
-namespace :assets do
-  desc 'Precompile assets'
-  task :precompile do
-    sh "bundle exec jekyll build"
-  end
+task :deploy do
+  sh 'jekyll build && rsync -r _site neektza@188.226.242.123:~/www/crokokuryu.org'
 end
