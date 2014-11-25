@@ -3,7 +3,6 @@ ruby '2.1.2'
 
 gem 'rake'
 gem 'jekyll'
-gem 'jekyll-assets'
 gem 'rack-contrib'
 gem 'rack-rewrite'
 gem 'puma'
